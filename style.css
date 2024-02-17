@@ -135,3 +135,138 @@ nav .fa {
         padding: 30px;
     }
 }
+
+
+/* style COURSE section  */
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    color: #777777;
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.row h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col {
+    flex-basis: 30%;
+    background: #fbf9ed;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.25);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+        
+    }
+}
+
+
+/* style campus section  */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+
+}
+
+.layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+/* style facilities section  */
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    border-radius: 10px;
+    width: 100%
+}
+
+.facilities-col h3 {
+    margin: 15px 0;
+    text-align: left;
+}
