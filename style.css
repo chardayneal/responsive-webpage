@@ -10,7 +10,7 @@
 
 
 /* style HEADER CLASS section  */
-.header {
+.hero {
     min-height: 100vh;
     width: 100%;
     background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url('./images/banner.png');
@@ -65,7 +65,7 @@ nav img {
 }
 
 
-/* style hero section  */
+/* style HERO section  */
 .text-box {
     width: 90%;
     color: white;
@@ -192,7 +192,7 @@ p {
 }
 
 
-/* style campus section  */
+/* style CAMPUS section  */
 .campus {
     width: 80%;
     margin: auto;
@@ -245,7 +245,7 @@ p {
 }
 
 
-/* style facilities section  */
+/* style FACILITIES section  */
 
 .facilities {
     width: 80%;
@@ -269,4 +269,97 @@ p {
 .facilities-col h3 {
     margin: 15px 0;
     text-align: left;
+}
+
+.facilities p{
+    padding: 0;
+}
+
+
+/* style TESTIMONIAL section  */
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial-col {
+    background-color: #fff3f3;
+    display: flex;
+    flex-basis: 40%;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px;
+    border: 2px solid black
+}
+
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p {
+    padding: 0;
+}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa {
+    color: #f44336;
+}
+
+@media(max-width: 700px) {
+    .testimonial-col {
+        margin-left: 0;
+        margin-right: 15px
+    }
+}
+
+/* style call to action section  */
+.callToAction {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.callToAction h1 {
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .callToAction h1 {
+        font-size: 24px;
+    }
+}
+
+/* style FOOTER section  */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4 {
+    margin: 25px 0;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 15px;
+    padding: 15px 0;
 }
