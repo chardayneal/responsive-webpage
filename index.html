@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website Design</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- import close icon image-->
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -19,9 +21,28 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making a website is now one of the easiest things in the world. You just need to learn HTML, CSS, <br> Javascript and you are good to go.</p>
+            <a class="hero-button" href="" >Visit Us to Know More</a>
+        </div>
     </section>
 
 
+    <!-- Javascript to Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    </script>
 </body>
 </html>

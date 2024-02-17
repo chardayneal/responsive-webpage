@@ -32,6 +32,7 @@ nav img {
     width: 150px;
 }
 
+
 .nav-links {
     flex: 1;
     text-align: right;
@@ -61,4 +62,76 @@ nav img {
 
 .nav-links ul li:hover::after {
     width: 100%;
+}
+
+
+/* style hero section  */
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 65px;
+}
+
+.text-box p {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0 40px; 
+}
+
+.hero-button {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.hero-button:hover {
+    border: 2px solid #f44336;
+    background-color: #f44336;
+    transition: 0.3s;
+}
+
+nav .fa {
+    display: none;
+} 
+
+/* media query for smaller devices */
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
 }
