@@ -366,7 +366,7 @@ footer h4 {
 
 
 
-/* ABOUT ME PAGE  */
+/* ABOUT US PAGE  */
 
 .subhero {
     height: 50vh;
@@ -416,4 +416,85 @@ footer h4 {
 
 .about-button:hover {
     color: white;
+}
+
+
+
+/* BLOG PAGE  */
+
+/* style blog section  */
+.blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.blog-left {
+    flex-basis: 60%;
+}
+
+.blog-left img {
+    width: 100%;
+}
+
+.blog-left h2 {
+    color: #222222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-left p {
+    color: #999999;
+    padding: 0;
+}
+
+.blog-right {
+    flex-basis: 35%;
+}
+.blog-right h3 {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* style comment section  */
+.comment-box {
+    border: 1px solid #cccccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+@media(max-width: 700px) {
+    .sub-header h1 {
+        font-size: 25px;
+    }
 }
